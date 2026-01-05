@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos - Notre Équipe | MotoPro</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Additional styles for About page */
+        .about-hero {
+            background: linear-gradient(135deg, var(--secondary-color) 0%, var(--text-dark) 100%);
+            color: white;
+            padding: 100px 0 60px;
+            text-align: center;
+        }
+
+        .about-hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            font-weight: 800;
+        }
+
+        .about-hero p {
+            font-size: 20px;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        .team-section {
+            padding: 80px 0;
+            background: var(--bg-light);
+        }
+
+        .team-intro {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .team-intro h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: var(--text-dark);
+            font-weight: 700;
+        }
+
+        .team-intro p {
+            font-size: 18px;
+            color: var(--text-gray);
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .team-member {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: all 0.4s ease;
+        }
+
+        .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .team-photo {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+        }
+
+        .team-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .team-member:hover .team-photo img {
+            transform: scale(1.1);
+        }
+
+        .team-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: var(--primary-color);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .team-info {
+            padding: 30px;
+        }
+
+        .team-info h3 {
+            font-size: 24px;
+            margin-bottom: 8px;
+            color: var(--text-dark);
+        }
+
+        .team-info .role {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        .team-info .experience {
+            color: var(--text-gray);
+            line-height: 1.7;
+            margin-bottom: 15px;
+            font-size: 15px;
+        }
+
+        .team-info .bike-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px;
+            background: var(--bg-light);
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+
+        .team-info .bike-info i {
+            color: var(--primary-color);
+            font-size: 20px;
+        }
+
+        .team-info .bike-info span {
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        .bikes-gallery {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .bikes-gallery h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: var(--text-dark);
+            font-weight: 700;
+        }
+
+        .bikes-gallery p {
+            text-align: center;
+            font-size: 18px;
+            color: var(--text-gray);
+            margin-bottom: 50px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            height: 300px;
+            border-radius: 15px;
+            overflow: hidden;
+            cursor: pointer;
+            box-shadow: var(--shadow-md);
+            transition: all 0.4s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-item .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            padding: 20px;
+            color: white;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover .overlay {
+            transform: translateY(0);
+        }
+
+        .gallery-item .overlay h4 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .about-hero h1 {
+                font-size: 32px;
+            }
+
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-motorcycle"></i>
+                    <span>MotoPro</span>
+                </div>
+
+                <nav class="nav" id="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="index.html#marques">Marques</a></li>
+                        <li><a href="index.html#motos">Motos</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="a-propos.html" class="active">À propos</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <a href="tel:+33123456789" class="phone-btn">
+                        <i class="fas fa-phone"></i>
+                        <span>+33 1 23 45 67 89</span>
+                    </a>
+                    <button class="cta-btn" onclick="window.location.href='index.html#contact'">Contact</button>
+                </div>
+
+                <button class="mobile-toggle" id="mobileToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="about-hero">
+        <div class="container">
+            <h1>NOTRE ÉQUIPE PASSIONNÉE</h1>
+            <p>Rencontrez les experts qui font de MotoPro votre destination moto de confiance. Chacun d'entre nous vit et respire la passion des deux-roues.</p>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="container">
+            <div class="team-intro">
+                <h2>L'ÉQUIPE MOTOPRO</h2>
+                <p>Notre équipe est composée de passionnés de moto avec des années d'expérience dans la vente, l'entretien et la personnalisation. Nous partageons tous le même amour pour les deux-roues et mettons notre expertise à votre service.</p>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="team-photo">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&q=80" alt="Marc Dubois">
+                        <div class="team-badge">Fondateur</div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Marc Dubois</h3>
+                        <div class="role">Fondateur & Directeur</div>
+                        <p class="experience">Passionné de moto depuis 25 ans, Marc a fondé MotoPro avec la vision de créer un lieu où chaque motard se sente chez lui. Expert en motos sportives et préparation piste.</p>
+                        <div class="bike-info">
+                            <i class="fas fa-motorcycle"></i>
+                            <span>Kawasaki Ninja ZX-10R</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="team-photo">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80" alt="Sophie Martin">
+                        <div class="team-badge">Responsable Ventes</div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Sophie Martin</h3>
+                        <div class="role">Responsable Ventes</div>
+                        <p class="experience">15 ans d'expérience dans le secteur moto. Sophie vous guide dans le choix de votre moto idéale avec passion et professionnalisme. Spécialiste des motos d'enduro et trail.</p>
+                        <div class="bike-info">
+                            <i class="fas fa-motorcycle"></i>
+                            <span>KTM 890 Adventure R</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="team-photo">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80" alt="Thomas Leroy">
+                        <div class="team-badge">Chef Mécanicien</div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Thomas Leroy</h3>
+                        <div class="role">Chef Mécanicien</div>
+                        <p class="experience">Mécanicien certifié avec 18 ans d'expérience. Thomas et son équipe assurent l'entretien et la réparation de toutes marques avec un souci du détail incomparable.</p>
+                        <div class="bike-info">
+                            <i class="fas fa-motorcycle"></i>
+                            <span>Yamaha MT-09 SP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="team-photo">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&q=80" alt="Julie Renard">
+                        <div class="team-badge">Conseillère</div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Julie Renard</h3>
+                        <div class="role">Conseillère Équipement</div>
+                        <p class="experience">Spécialiste de l'équipement moto et des accessoires. Julie vous aide à choisir le meilleur équipement pour votre sécurité et votre confort sur la route.</p>
+                        <div class="bike-info">
+                            <i class="fas fa-motorcycle"></i>
+                            <span>Honda CB650R</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="team-photo">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800&q=80" alt="Pierre Moreau">
+                        <div class="team-badge">Préparateur</div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Pierre Moreau</h3>
+                        <div class="role">Spécialiste Customisation</div>
+                        <p class="experience">Expert en customisation et préparation. Pierre transforme votre moto en machine unique selon vos désirs, de la peinture personnalisée aux modifications performance.</p>
+                        <div class="bike-info">
+                            <i class="fas fa-motorcycle"></i>
+                            <span>Ducati Streetfighter V4</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="team-photo">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=800&q=80" alt="Émilie Blanc">
+                        <div class="team-badge">Gestionnaire</div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Émilie Blanc</h3>
+                        <div class="role">Gestionnaire SAV</div>
+                        <p class="experience">Votre interlocutrice privilégiée pour le service après-vente. Émilie assure le suivi de vos rendez-vous et garantit votre satisfaction à chaque étape.</p>
+                        <div class="bike-info">
+                            <i class="fas fa-motorcycle"></i>
+                            <span>Suzuki GSX-S750</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bikes Gallery -->
+    <section class="bikes-gallery">
+        <div class="container">
+            <h2>NOS MOTOS</h2>
+            <p>Découvrez les machines de l'équipe et quelques-unes de nos plus belles réalisations</p>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?w=800&q=80" alt="Kawasaki Ninja">
+                    <div class="overlay">
+                        <h4>Kawasaki Ninja ZX-10R</h4>
+                        <p>La machine de Marc</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1609630875171-b1321377ee65?w=800&q=80" alt="KTM Adventure">
+                    <div class="overlay">
+                        <h4>KTM 890 Adventure R</h4>
+                        <p>La moto de Sophie pour les aventures</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1558981852-426c6c22a060?w=800&q=80" alt="Yamaha MT-09">
+                    <div class="overlay">
+                        <h4>Yamaha MT-09 SP</h4>
+                        <p>Le roadster de Thomas</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1558980664-1db506751c6c?w=800&q=80" alt="Honda CB650R">
+                    <div class="overlay">
+                        <h4>Honda CB650R</h4>
+                        <p>L'élégance selon Julie</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=800&q=80" alt="Ducati Streetfighter">
+                    <div class="overlay">
+                        <h4>Ducati Streetfighter V4</h4>
+                        <p>La bête de Pierre</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1625047509168-a7026f36de04?w=800&q=80" alt="Suzuki GSX-S">
+                    <div class="overlay">
+                        <h4>Suzuki GSX-S750</h4>
+                        <p>La sportive d'Émilie</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?w=800&q=80" alt="Custom Project">
+                    <div class="overlay">
+                        <h4>Projet Custom</h4>
+                        <p>Café Racer personnalisé</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1558981359-219d6364c9c8?w=800&q=80" alt="Track Day">
+                    <div class="overlay">
+                        <h4>Journée Piste</h4>
+                        <p>Notre passion en action</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=800&q=80" alt="Workshop">
+                    <div class="overlay">
+                        <h4>Notre Atelier</h4>
+                        <p>Là où la magie opère</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>REJOIGNEZ LA FAMILLE MOTOPRO</h2>
+            <p>Venez nous rencontrer et discuter moto autour d'un café. Notre équipe est là pour vous.</p>
+            <div class="cta-buttons">
+                <a href="tel:+33123456789" class="btn btn-primary btn-large">
+                    <i class="fas fa-phone"></i> +33 1 23 45 67 89
+                </a>
+                <a href="index.html#contact" class="btn btn-secondary btn-large">
+                    <i class="fas fa-map-marker-alt"></i> Nous rendre visite
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <i class="fas fa-motorcycle"></i>
+                        <span>MotoPro</span>
+                    </div>
+                    <p>Votre spécialiste et concessionnaire officiel de grandes marques de motos.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Liens rapides</h4>
+                    <ul>
+                        <li><a href="index.html#motos">Motos</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#marques">Marques</a></li>
+                        <li><a href="a-propos.html">À propos</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Nos marques</h4>
+                    <ul>
+                        <li><a href="#">Kawasaki</a></li>
+                        <li><a href="#">KTM</a></li>
+                        <li><a href="#">Yamaha</a></li>
+                        <li><a href="#">Honda</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Rue de la Moto<br>75001 Paris</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+33123456789">+33 1 23 45 67 89</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:contact@motopro.fr">contact@motopro.fr</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Lun-Ven: 8h-18h<br>Sam: 9h-16h</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 MotoPro. Tous droits réservés.</p>
+                <div class="footer-links">
+                    <a href="#">Mentions légales</a>
+                    <a href="#">Politique de confidentialité</a>
+                    <a href="#">CGV</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

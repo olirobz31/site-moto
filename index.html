@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotoPro - Votre Spécialiste Moto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-motorcycle"></i>
+                    <span>MotoPro</span>
+                </div>
+                
+                <nav class="nav" id="nav">
+                    <ul class="nav-list">
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#marques">Marques</a></li>
+                        <li><a href="#motos">Motos</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="a-propos.html" target="_blank">À propos</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <a href="tel:+33123456789" class="phone-btn">
+                        <i class="fas fa-phone"></i>
+                        <span>+33 1 23 45 67 89</span>
+                    </a>
+                    <button class="cta-btn">Réserver Essai</button>
+                </div>
+
+                <button class="mobile-toggle" id="mobileToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="accueil">
+        <video class="hero-video" autoplay muted loop playsinline poster="">
+            <source src="video-moto.mp4.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la vidéo.
+        </video>
+        <div class="hero-background-fallback"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="container">
+                <h1 class="hero-title">BIENVENUE CHEZ MOTOPRO</h1>
+                <h2 class="hero-subtitle">Tout pour votre deux-roues</h2>
+                <p class="hero-text">Votre spécialiste et concessionnaire officiel de grandes marques de motos</p>
+                <div class="hero-buttons">
+                    <a href="#motos" class="btn btn-primary">Découvrir nos motos</a>
+                    <a href="#contact" class="btn btn-secondary">Réserver un essai</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Défiler</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section class="brands" id="marques">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">NOS MARQUES</h2>
+                <p class="section-subtitle">Découvrez notre sélection des meilleures marques de motos</p>
+            </div>
+
+            <div class="brands-grid">
+                <a href="kawasaki.html" class="brand-card">
+                    <div class="brand-logo">
+                        <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=400&q=80" alt="Kawasaki">
+                    </div>
+                    <h3>Kawasaki</h3>
+                    <p>Performance et fiabilité japonaise</p>
+                    <span class="brand-link">Découvrir <i class="fas fa-arrow-right"></i></span>
+                </a>
+
+                <a href="ktm.html" class="brand-card">
+                    <div class="brand-logo">
+                        <img src="https://images.unsplash.com/photo-1609630875171-b1321377ee65?w=400&q=80" alt="KTM">
+                    </div>
+                    <h3>KTM</h3>
+                    <p>Ready to Race - L'excellence autrichienne</p>
+                    <span class="brand-link">Découvrir <i class="fas fa-arrow-right"></i></span>
+                </a>
+
+                <a href="yamaha.html" class="brand-card">
+                    <div class="brand-logo">
+                        <img src="https://images.unsplash.com/photo-1558981852-426c6c22a060?w=400&q=80" alt="Yamaha">
+                    </div>
+                    <h3>Yamaha</h3>
+                    <p>Innovation et tradition depuis 1955</p>
+                    <span class="brand-link">Découvrir <i class="fas fa-arrow-right"></i></span>
+                </a>
+
+                <a href="honda.html" class="brand-card">
+                    <div class="brand-logo">
+                        <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?w=400&q=80" alt="Honda">
+                    </div>
+                    <h3>Honda</h3>
+                    <p>Le leader mondial de la fiabilité</p>
+                    <span class="brand-link">Découvrir <i class="fas fa-arrow-right"></i></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">DÉCOUVREZ MOTOPRO</h2>
+                <p class="section-subtitle">Vente, entretien toutes marques, préparation route et piste, optimisation, hivernage — tout pour votre deux-roues, en un seul endroit.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h3 class="services-title">NOUS PROPOSONS :</h3>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Conseil d'achat">
+                        <div class="service-icon-overlay">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h4>Conseil d'achat</h4>
+                        <p>Nos experts vous guident dans le choix de votre moto idéale selon votre niveau, budget et besoins.</p>
+                        <a href="conseil-achat.html" class="service-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=600&q=80" alt="Entretien annuel">
+                        <div class="service-icon-overlay">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h4>Entretien annuel</h4>
+                        <p>Service complet incluant vidange, filtres, révision complète. Garantie constructeur préservée.</p>
+                        <a href="entretien-annuel.html" class="service-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1558980664-1db506751c6c?w=600&q=80" alt="Changement de pneu">
+                        <div class="service-icon-overlay">
+                            <i class="fas fa-circle-notch"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h4>Changement de pneu</h4>
+                        <p>Large stock de pneus toutes marques. Montage et équilibrage professionnels.</p>
+                        <a href="changement-pneu.html" class="service-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1625047509168-a7026f36de04?w=600&q=80" alt="Réparation">
+                        <div class="service-icon-overlay">
+                            <i class="fas fa-wrench"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h4>Réparation</h4>
+                        <p>Diagnostic et réparation toutes marques. Mécaniciens certifiés, pièces d'origine.</p>
+                        <a href="reparation.html" class="service-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1558981852-426c6c22a060?w=600&q=80" alt="Custom">
+                        <div class="service-icon-overlay">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h4>Custom</h4>
+                        <p>Customisation et tuning sur mesure. Peinture, accessoires, performance.</p>
+                        <a href="custom.html" class="service-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=600&q=80" alt="Location de moto">
+                        <div class="service-icon-overlay">
+                            <i class="fas fa-key"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h4>Location de moto</h4>
+                        <p>Louez la moto de vos rêves pour un jour ou plus. Assurance incluse.</p>
+                        <a href="location-moto.html" class="service-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bikes Section -->
+    <section class="bikes" id="motos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">NOS OCCASIONS</h2>
+                <p class="section-subtitle">Nos experts sont là pour vous conseiller dans le choix de votre deux-roues idéal</p>
+            </div>
+
+            <div class="view-toggle">
+                <button class="view-btn active" data-view="grid">
+                    <i class="fas fa-th"></i>
+                    <span>Grille</span>
+                </button>
+                <button class="view-btn" data-view="list">
+                    <i class="fas fa-list"></i>
+                    <span>Liste</span>
+                </button>
+            </div>
+
+            <div class="bikes-grid">
+                <div class="bike-card">
+                    <div class="bike-card-inner">
+                        <div class="bike-card-front">
+                            <div class="bike-image">
+                                <div class="bike-badge">Occasion</div>
+                                <div class="bike-carousel">
+                                    <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?w=800&q=80" alt="Kawasaki Ninja 650" class="active">
+                                    <img src="https://images.unsplash.com/photo-1558981359-219d6364c9c8?w=800&q=80" alt="Kawasaki Ninja 650">
+                                    <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=800&q=80" alt="Kawasaki Ninja 650">
+                                    <img src="https://images.unsplash.com/photo-1609630875171-b1321377ee65?w=800&q=80" alt="Kawasaki Ninja 650">
+                                </div>
+                                <button class="carousel-btn prev"><i class="fas fa-chevron-left"></i></button>
+                                <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
+                                <div class="carousel-indicators">
+                                    <span class="indicator active"></span>
+                                    <span class="indicator"></span>
+                                    <span class="indicator"></span>
+                                    <span class="indicator"></span>
+                                </div>
+                            </div>
+                            <div class="bike-content">
+                                <h4>Kawasaki Ninja 650</h4>
+                                <div class="bike-specs">
+                                    <span><i class="fas fa-calendar"></i> 2022</span>
+                                    <span><i class="fas fa-tachometer-alt"></i> 5,000 km</span>
+                                </div>
+                                <div class="bike-price">12,900 €</div>
+                                <button class="btn-details flip-btn">Voir détails</button>
+                            </div>
+                        </div>
+                        <div class="bike-card-back">
+                            <div class="back-header">
+                                <h4>Kawasaki Ninja 650</h4>
+                                <button class="btn-close-flip"><i class="fas fa-times"></i></button>
+                            </div>
+                            <div class="bike-details">
+                                <h5>Caractéristiques techniques</h5>
+                                <ul>
+                                    <li><i class="fas fa-cog"></i> <strong>Moteur:</strong> 649 cm³, bicylindre</li>
+                                    <li><i class="fas fa-tachometer-alt"></i> <strong>Puissance:</strong> 68 ch à 8,000 tr/min</li>
+                                    <li><i class="fas fa-weight"></i> <strong>Poids:</strong> 193 kg</li>
+                                    <li><i class="fas fa-gas-pump"></i> <strong>Réservoir:</strong> 15 litres</li>
+                                    <li><i class="fas fa-calendar"></i> <strong>Année:</strong> 2022</li>
+                                    <li><i class="fas fa-road"></i> <strong>Kilométrage:</strong> 5,000 km</li>
+                                </ul>
+                                <h5>Équipements</h5>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> ABS</li>
+                                    <li><i class="fas fa-check"></i> Écran LCD</li>
+                                    <li><i class="fas fa-check"></i> Éclairage LED</li>
+                                    <li><i class="fas fa-check"></i> Révisée récemment</li>
+                                </ul>
+                                <div class="bike-price-back">12,900 €</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bike-card">
+                    <div class="bike-card-inner">
+                        <div class="bike-card-front">
+                            <div class="bike-image">
+                                <div class="bike-badge">Neuf</div>
+                                <div class="bike-carousel">
+                                    <img src="https://images.unsplash.com/photo-1609630875171-b1321377ee65?w=800&q=80" alt="Yamaha MT-07" class="active">
+                                    <img src="https://images.unsplash.com/photo-1558981852-426c6c22a060?w=800&q=80" alt="Yamaha MT-07">
+                                    <img src="https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?w=800&q=80" alt="Yamaha MT-07">
+                                    <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?w=800&q=80" alt="Yamaha MT-07">
+                                </div>
+                                <button class="carousel-btn prev"><i class="fas fa-chevron-left"></i></button>
+                                <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
+                                <div class="carousel-indicators">
+                                    <span class="indicator active"></span>
+                                    <span class="indicator"></span>
+                                    <span class="indicator"></span>
+                                    <span class="indicator"></span>
+                                </div>
+                            </div>
+                            <div class="bike-content">
+                                <h4>Yamaha MT-07</h4>
+                                <div class="bike-specs">
+                                    <span><i class="fas fa-calendar"></i> 2024</span>
+                                    <span><i class="fas fa-tachometer-alt"></i> 0 km</span>
+                                </div>
+                                <div class="bike-price">7,999 €</div>
+                                <button class="btn-details flip-btn">Voir détails</button>
+                            </div>
+                        </div>
+                        <div class="bike-card-back">
+                            <div class="back-header">
+                                <h4>Yamaha MT-07</h4>
+                                <button class="btn-close-flip"><i class="fas fa-times"></i></button>
+                            </div>
+                            <div class="bike-details">
+                                <h5>Caractéristiques techniques</h5>
+                                <ul>
+                                    <li><i class="fas fa-cog"></i> <strong>Moteur:</strong> 689 cm³, bicylindre CP2</li>
+                                    <li><i class="fas fa-tachometer-alt"></i> <strong>Puissance:</strong> 73 ch à 8,750 tr/min</li>
+                                    <li><i class="fas fa-weight"></i> <strong>Poids:</strong> 184 kg</li>
+                                    <li><i class="fas fa-gas-pump"></i> <strong>Réservoir:</strong> 14 litres</li>
+                                    <li><i class="fas fa-calendar"></i> <strong>Année:</strong> 2024</li>
+                                    <li><i class="fas fa-road"></i> <strong>Kilométrage:</strong> 0 km (Neuf)</li>
+                                </ul>
+                                <h5>Équipements</h5>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> ABS dernière génération</li>
+                                    <li><i class="fas fa-check"></i> Écran TFT couleur</li>
+                                    <li><i class="fas fa-check"></i> Full LED</li>
+                                    <li><i class="fas fa-check"></i> Garantie constructeur 2 ans</li>
+                                </ul>
+                                <div class="bike-price-back">7,999 €</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bike-card">
+                    <div class="bike-card-inner">
+                        <div class="bike-card-front">
+                            <div class="bike-image">
+                                <div class="bike-badge">Occasion</div>
+                                <div class="bike-carousel">
+                                    <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=800&q=80" alt="KTM 390 Duke" class="active">
+                                    <img src="https://images.unsplash.com/photo-1558980664-1db506751c6c?w=800&q=80" alt="KTM 390 Duke">
+                                    <img src="https://images.unsplash.com/photo-1558981359-219d6364c9c8?w=800&q=80" alt="KTM 390 Duke">
+                                    <img src="https://images.unsplash.com/photo-1609630875171-b1321377ee65?w=800&q=80" alt="KTM 390 Duke">
+                                </div>
+                                <button class="carousel-btn prev"><i class="fas fa-chevron-left"></i></button>
+                                <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
+                                <div class="carousel-indicators">
+                                    <span class="indicator active"></span>
+                                    <span class="indicator"></span>
+                                    <span class="indicator"></span>
+                                    <span class="indicator"></span>
+                                </div>
+                            </div>
+                            <div class="bike-content">
+                                <h4>KTM 390 Duke</h4>
+                                <div class="bike-specs">
+                                    <span><i class="fas fa-calendar"></i> 2023</span>
+                                    <span><i class="fas fa-tachometer-alt"></i> 3,200 km</span>
+                                </div>
+                                <div class="bike-price">5,400 €</div>
+                                <button class="btn-details flip-btn">Voir détails</button>
+                            </div>
+                        </div>
+                        <div class="bike-card-back">
+                            <div class="back-header">
+                                <h4>KTM 390 Duke</h4>
+                                <button class="btn-close-flip"><i class="fas fa-times"></i></button>
+                            </div>
+                            <div class="bike-details">
+                                <h5>Caractéristiques techniques</h5>
+                                <ul>
+                                    <li><i class="fas fa-cog"></i> <strong>Moteur:</strong> 373 cm³, monocylindre</li>
+                                    <li><i class="fas fa-tachometer-alt"></i> <strong>Puissance:</strong> 44 ch à 9,000 tr/min</li>
+                                    <li><i class="fas fa-weight"></i> <strong>Poids:</strong> 149 kg</li>
+                                    <li><i class="fas fa-gas-pump"></i> <strong>Réservoir:</strong> 13.4 litres</li>
+                                    <li><i class="fas fa-calendar"></i> <strong>Année:</strong> 2023</li>
+                                    <li><i class="fas fa-road"></i> <strong>Kilométrage:</strong> 3,200 km</li>
+                                </ul>
+                                <h5>Équipements</h5>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> ABS Bosch</li>
+                                    <li><i class="fas fa-check"></i> TFT 5 pouces</li>
+                                    <li><i class="fas fa-check"></i> Ride by Wire</li>
+                                    <li><i class="fas fa-check"></i> Quickshifter+</li>
+                                </ul>
+                                <div class="bike-price-back">5,400 €</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="#" class="btn btn-primary">Découvrir toute notre collection</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Test Drive Section -->
+    <section class="test-drive">
+        <div class="container">
+            <div class="test-drive-content">
+                <div class="test-drive-icon">
+                    <i class="fas fa-key"></i>
+                </div>
+                <h2>ESSAYEZ VOTRE PROCHAINE MOTO</h2>
+                <p>Testez gratuitement pendant 30 minutes avec équipement fourni</p>
+                
+                <div class="test-drive-stats">
+                    <div class="stat">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Essais/an</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">Satisfaits</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">30min</div>
+                        <div class="stat-label">Gratuit</div>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary btn-large">Réserver</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">ILS NOUS FONT CONFIANCE</h2>
+                <p class="section-subtitle">Découvrez les avis de nos clients satisfaits</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Service impeccable et conseils d'experts. J'ai trouvé la moto parfaite pour mes besoins!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">M</div>
+                        <div class="author-info">
+                            <div class="author-name">Marc Dubois</div>
+                            <div class="author-title">Client KTM</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"L'équipe est passionnée et à l'écoute. Location facile et motos en parfait état."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">S</div>
+                        <div class="author-info">
+                            <div class="author-name">Sophie Martin</div>
+                            <div class="author-title">Cliente Kawasaki</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Excellent rapport qualité-prix et service après-vente au top. Je recommande!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">J</div>
+                        <div class="author-info">
+                            <div class="author-name">Jean Favre</div>
+                            <div class="author-title">Client Yamaha</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>PRÊT À TROUVER VOTRE MOTO IDÉALE ?</h2>
+            <p>Notre équipe d'experts est là pour vous conseiller et vous accompagner dans votre projet.</p>
+            <div class="cta-buttons">
+                <a href="tel:+33123456789" class="btn btn-primary btn-large">
+                    <i class="fas fa-phone"></i> +33 1 23 45 67 89
+                </a>
+                <a href="#contact" class="btn btn-secondary btn-large">
+                    <i class="fas fa-map-marker-alt"></i> Nous rendre visite
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <i class="fas fa-motorcycle"></i>
+                        <span>MotoPro</span>
+                    </div>
+                    <p>Votre spécialiste et concessionnaire officiel de grandes marques de motos.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Liens rapides</h4>
+                    <ul>
+                        <li><a href="#motos">Motos</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#marques">Marques</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Nos marques</h4>
+                    <ul>
+                        <li><a href="#">Kawasaki</a></li>
+                        <li><a href="#">KTM</a></li>
+                        <li><a href="#">Yamaha</a></li>
+                        <li><a href="#">Honda</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Rue de la Moto<br>75001 Paris</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+33123456789">+33 1 23 45 67 89</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:contact@motopro.fr">contact@motopro.fr</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Lun-Ven: 8h-18h<br>Sam: 9h-16h</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 MotoPro. Tous droits réservés.</p>
+                <div class="footer-links">
+                    <a href="#">Mentions légales</a>
+                    <a href="#">Politique de confidentialité</a>
+                    <a href="#">CGV</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
