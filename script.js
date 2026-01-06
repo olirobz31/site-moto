@@ -387,3 +387,100 @@ window.addEventListener('load', () => {
 //             .catch(err => console.log('Service Worker registration failed'));
 //     });
 // }
+
+// Gallery Lightbox for "Nos motos" section
+const galleryItems = document.querySelectorAll('.gallery-item');
+
+if (galleryItems.length > 0) {
+    // Create lightbox elements
+    const lightbox = document.createElement('div');
+    lightbox.className = 'lightbox';
+    lightbox.innerHTML = `
+        <div class="lightbox-content">
+            <button class="lightbox-close">&times;</button>
+            <button class="lightbox-prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="lightbox-next"><i class="fas fa-chevron-right"></i></button>
+            <img src="" alt="">
+            <div class="lightbox-caption"></div>
+            <div class="lightbox-counter"></div>
+        </div>
+    `;
+    document.body.appendChild(lightbox);
+
+    // Get lightbox elements
+    const lightboxImg = lightbox.querySelector('img');
+    const lightboxCaption = lightbox.querySelector('.lightbox-caption');
+    const lightboxCounter = lightbox.querySelector('.lightbox-counter');
+    const closeBtn = lightbox.querySelector('.lightbox-close');
+    const prevBtn = lightbox.querySelector('.lightbox-prev');
+    const nextBtn = lightbox.querySelector('.lightbox-next');
+
+    let currentImageIndex = 0;
+    const images = Array.from(galleryItems).map(item => ({
+        src: item.querySelector('img').src,
+        title: item.querySelector('.overlay h4').textContent,
+        description: item.querySelector('.overlay p').textContent
+    }));
+
+    // Function to show image
+    const showImage = (index) => {
+        currentImageIndex = index;
+        const image = images[index];
+        lightboxImg.src = image.src;
+        lightboxCaption.innerHTML = `<h3>${image.title}</h3><p>${image.description}</p>`;
+        lightboxCounter.textContent = `${index + 1} / ${images.length}`;
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    };
+
+    // Function to close lightbox
+    const closeLightbox = () => {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = '';
+    };
+
+    // Add click event to gallery items
+    galleryItems.forEach((item, index) => {
+        item.addEventListener('click', (e) => {
+            e.preventDefault();
+            showImage(index);
+        });
+    });
+
+    // Close button
+    closeBtn.addEventListener('click', closeLightbox);
+
+    // Previous button
+    prevBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+        showImage(currentImageIndex);
+    });
+
+    // Next button
+    nextBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+        showImage(currentImageIndex);
+    });
+
+    // Close on background click
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) {
+            closeLightbox();
+        }
+    });
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+        if (!lightbox.classList.contains('active')) return;
+
+        if (e.key === 'Escape') {
+            closeLightbox();
+        } else if (e.key === 'ArrowLeft') {
+            prevBtn.click();
+        } else if (e.key === 'ArrowRight') {
+            nextBtn.click();
+        }
+    });
+}
