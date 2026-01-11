@@ -33,6 +33,104 @@
 
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Schema.org JSON-LD pour LocalBusiness -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MotorcycleDealer",
+        "name": "MotoPro",
+        "description": "Concessionnaire moto a Paris. Vente de motos neuves et d'occasion Kawasaki, KTM, Yamaha, Honda. Entretien, reparation, customisation et location.",
+        "url": "https://www.motopro.fr",
+        "telephone": "+33123456789",
+        "email": "contact@motopro.fr",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "123 Rue de la Moto",
+            "addressLocality": "Paris",
+            "postalCode": "75001",
+            "addressCountry": "FR"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "48.8566",
+            "longitude": "2.3522"
+        },
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "08:00",
+                "closes": "18:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "09:00",
+                "closes": "16:00"
+            }
+        ],
+        "priceRange": "$$",
+        "currenciesAccepted": "EUR",
+        "paymentAccepted": "Cash, Credit Card, Bank Transfer",
+        "areaServed": {
+            "@type": "City",
+            "name": "Paris"
+        },
+        "brand": [
+            {"@type": "Brand", "name": "Kawasaki"},
+            {"@type": "Brand", "name": "KTM"},
+            {"@type": "Brand", "name": "Yamaha"},
+            {"@type": "Brand", "name": "Honda"}
+        ],
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Services MotoPro",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Vente de motos neuves et occasion"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Entretien et revision moto"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Reparation moto toutes marques"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Location de moto"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Customisation et preparation"
+                    }
+                }
+            ]
+        },
+        "sameAs": [
+            "https://www.facebook.com/motopro",
+            "https://www.instagram.com/motopro",
+            "https://www.youtube.com/motopro"
+        ]
+    }
+    </script>
 </head>
 <body>
     <!-- Header & Navigation -->

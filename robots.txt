@@ -1,3 +1,33 @@
+# Robots.txt pour MotoPro - Concessionnaire Moto Paris
+# https://olirobz31.github.io/site-moto/
+
 User-agent: *
 Allow: /
+
+# Pages principales
+Allow: /index.html
+Allow: /a-propos.html
+Allow: /kawasaki.html
+Allow: /ktm.html
+Allow: /yamaha.html
+Allow: /honda.html
+
+# Pages services
+Allow: /conseil-achat.html
+Allow: /entretien-annuel.html
+Allow: /changement-pneu.html
+Allow: /reparation.html
+Allow: /custom.html
+Allow: /location-moto.html
+
+# Pages legales (noindex dans les pages mais crawlables)
+Allow: /mentions-legales.html
+Allow: /confidentialite.html
+Allow: /cgv.html
+
+# Ressources
+Allow: /styles.css
+Allow: /script.js
+
+# Sitemap
 Sitemap: https://olirobz31.github.io/site-moto/sitemap.xml

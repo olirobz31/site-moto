@@ -1,21 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://olirobz31.github.io/site-moto/</loc>
-    <lastmod>2025-01-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://olirobz31.github.io/site-moto/motos.html</loc>
-    <lastmod>2025-01-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://olirobz31.github.io/site-moto/contact.html</loc>
-    <lastmod>2025-01-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
+    <!-- Page accueil -->
+    <url>
+        <loc>https://olirobz31.github.io/site-moto/</loc>
+        <lastmod>2024-01-11</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- Page A propos -->
+    <url>
+        <loc>https://olirobz31.github.io/site-moto/a-propos.html</loc>
+        <lastmod>2024-01-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Pages Marques -->
+    <url>
+        <loc>https://olirobz31.github.io/site-moto/kawasaki.html</loc>
+        <lastmod>2024-01-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://olirobz31.github.io/site-moto/ktm.html</loc>
+        <lastmod>2024-01-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://olirobz31.github.io/site-moto/yamaha.html</loc>
+        <lastmod>2024-01-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://olirobz31.github.io/site-moto/honda.html</loc>
+        <lastmod>2024-01-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Pages Services -->
+    <url>
+        <loc>https://olirobz31.github.io/site-moto/conseil-achat.html</loc>
+        <lastmod>2024-01-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://olirobz31.github.io/site-moto/entretien-annuel.html</loc>
+        <lastmod>2024-01-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://olirobz31.github.io/site-moto/changement-pneu.html</loc>
+        <lastmod>2024-01-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://olirobz31.github.io/site-moto/reparation.html</loc>
+        <lastmod>2024-01-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://olirobz31.github.io/site-moto/custom.html</loc>
+        <lastmod>2024-01-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://olirobz31.github.io/site-moto/location-moto.html</loc>
+        <lastmod>2024-01-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 </urlset>
