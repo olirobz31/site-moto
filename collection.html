@@ -391,7 +391,7 @@
         }
 
         .bike-content {
-            padding: 1.5rem;
+            padding: 0.75rem 2.75rem;
         }
 
         .bike-content h3 {
@@ -432,24 +432,31 @@
 
         .contact-btn {
             width: 100%;
-            padding: 0.75rem;
-            background: var(--primary);
+            padding: 0.75rem 1rem;
+            background: #FF5722;
             color: white;
             border: none;
-            border-radius: 8px;
+            border-radius: 12px;
             font-weight: 600;
-            font-size: 1rem;
+            font-size: 0.95rem;
             cursor: pointer;
-            transition: all 0.3s;
+            transition: all 0.3s ease;
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 8px;
+            box-shadow: 0 4px 12px rgba(255, 87, 34, 0.3);
         }
 
         .contact-btn:hover {
-            background: #e55a2b;
-            transform: translateY(-2px);
+            background: #F4511E;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 87, 34, 0.4);
+        }
+
+        .contact-btn:active {
+            transform: translateY(-1px);
+            box-shadow: 0 2px 8px rgba(255, 87, 34, 0.3);
         }
 
         /* No Results Message */
@@ -666,6 +673,7 @@
                         <li><a href="index.html">Accueil</a></li>
                         <li><a href="index.html#marques">Marques</a></li>
                         <li><a href="collection.html">Collection</a></li>
+                        <li><a href="index.html#motos">Nos occasions</a></li>
                         <li><a href="index.html#services">Services</a></li>
                         <li><a href="a-propos.html">À propos</a></li>
                         <li><a href="index.html#contact">Contact</a></li>
