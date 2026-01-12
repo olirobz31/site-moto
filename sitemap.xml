@@ -16,6 +16,14 @@
         <priority>0.8</priority>
     </url>
 
+    <!-- Page Collection -->
+    <url>
+        <loc>https://olirobz31.github.io/site-moto/collection.html</loc>
+        <lastmod>2024-01-12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+    </url>
+
     <!-- Pages Marques -->
     <url>
         <loc>https://olirobz31.github.io/site-moto/kawasaki.html</loc>

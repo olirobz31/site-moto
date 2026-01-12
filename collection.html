@@ -1,0 +1,1456 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="google-site-verification" content="AjPF0mRWJ4Db1KGGfSbawh4nqTGA63lobuvdnmUna5Q" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notre Collection de Motos - MotoPro | Kawasaki, KTM, Yamaha, Honda</title>
+    <meta name="description" content="Découvrez notre collection complète de motos neuves et d'occasion. Kawasaki Ninja, Yamaha MT, KTM Duke, Honda CB et plus encore. Prix compétitifs et qualité garantie.">
+    <meta name="keywords" content="collection motos, motos neuves, motos occasion, Kawasaki, KTM, Yamaha, Honda, Paris, concessionnaire">
+    <meta name="author" content="MotoPro">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.motopro.fr/collection.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.motopro.fr/collection.html">
+    <meta property="og:title" content="Notre Collection de Motos - MotoPro">
+    <meta property="og:description" content="Découvrez notre collection complète de motos neuves et d'occasion. Kawasaki, KTM, Yamaha, Honda. Prix compétitifs et qualité garantie.">
+    <meta property="og:image" content="https://www.motopro.fr/images/collection-og-image.jpg">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="MotoPro">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.motopro.fr/collection.html">
+    <meta name="twitter:title" content="Notre Collection de Motos - MotoPro">
+    <meta name="twitter:description" content="Découvrez notre collection complète de motos neuves et d'occasion. Kawasaki, KTM, Yamaha, Honda.">
+    <meta name="twitter:image" content="https://www.motopro.fr/images/collection-twitter-image.jpg">
+
+    <!-- Geo tags -->
+    <meta name="geo.region" content="FR-75">
+    <meta name="geo.placename" content="Paris">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Collection de Motos MotoPro",
+        "description": "Notre collection complète de motos neuves et d'occasion",
+        "numberOfItems": 15,
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                    "@type": "Motorcycle",
+                    "name": "Kawasaki Ninja 650",
+                    "brand": "Kawasaki",
+                    "offers": {
+                        "@type": "Offer",
+                        "price": "12900",
+                        "priceCurrency": "EUR"
+                    }
+                }
+            }
+        ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --primary: #ff6b35;
+            --secondary: #2c3e50;
+            --text-dark: #2c3e50;
+            --text-light: #7f8c8d;
+            --bg-light: #f8f9fa;
+            --border-light: #e0e0e0;
+            --success: #27ae60;
+            --kawasaki: #00a550;
+            --ktm: #ff6600;
+            --yamaha: #0066b2;
+            --honda: #cc0000;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        .header {
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary);
+        }
+
+        .logo i {
+            font-size: 2rem;
+        }
+
+        .nav-list {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-list a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-list a:hover {
+            color: var(--primary);
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .phone-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 0.5rem 1rem;
+            background: var(--bg-light);
+            border-radius: 8px;
+            text-decoration: none;
+            color: var(--text-dark);
+            transition: all 0.3s;
+        }
+
+        .phone-btn:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        .cta-btn {
+            padding: 0.75rem 1.5rem;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .cta-btn:hover {
+            background: #e55a2b;
+            transform: translateY(-2px);
+        }
+
+        .mobile-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 4px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .mobile-toggle span {
+            width: 25px;
+            height: 3px;
+            background: var(--text-dark);
+            transition: all 0.3s;
+        }
+
+        /* Hero Section */
+        .collection-hero {
+            background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
+            padding: 6rem 0 4rem;
+            text-align: center;
+            color: white;
+        }
+
+        .collection-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .collection-hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* Filter Section */
+        .filter-section {
+            background: white;
+            padding: 2rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 80px;
+            z-index: 900;
+        }
+
+        .filter-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .filter-brands {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .brand-filter {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .brand-filter input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            accent-color: var(--primary);
+        }
+
+        .brand-filter label {
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .brand-filter.kawasaki label { color: var(--kawasaki); }
+        .brand-filter.ktm label { color: var(--ktm); }
+        .brand-filter.yamaha label { color: var(--yamaha); }
+        .brand-filter.honda label { color: var(--honda); }
+
+        .filter-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .bike-counter {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            padding: 0.5rem 1rem;
+            background: var(--bg-light);
+            border-radius: 8px;
+        }
+
+        .bike-counter .count {
+            color: var(--primary);
+        }
+
+        .reset-btn {
+            padding: 0.5rem 1.5rem;
+            background: var(--text-light);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .reset-btn:hover {
+            background: var(--text-dark);
+        }
+
+        /* Collection Grid */
+        .collection-section {
+            padding: 4rem 0;
+            background: var(--bg-light);
+        }
+
+        .bikes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .bike-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+        }
+
+        .bike-card.hidden {
+            display: none;
+        }
+
+        .bike-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .bike-image {
+            position: relative;
+            width: 100%;
+            height: 250px;
+            overflow: hidden;
+        }
+
+        .bike-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .bike-card:hover .bike-image img {
+            transform: scale(1.1);
+        }
+
+        .bike-badges {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            right: 1rem;
+            display: flex;
+            justify-content: space-between;
+            gap: 0.5rem;
+        }
+
+        .brand-badge {
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .brand-badge.kawasaki { background: var(--kawasaki); }
+        .brand-badge.ktm { background: var(--ktm); }
+        .brand-badge.yamaha { background: var(--yamaha); }
+        .brand-badge.honda { background: var(--honda); }
+
+        .status-badge {
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: white;
+        }
+
+        .status-badge.neuf {
+            background: var(--success);
+        }
+
+        .status-badge.occasion {
+            background: var(--primary);
+        }
+
+        .bike-content {
+            padding: 1.5rem;
+        }
+
+        .bike-content h3 {
+            font-size: 1.5rem;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+        }
+
+        .bike-specs {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+        }
+
+        .spec-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .spec-item i {
+            color: var(--primary);
+        }
+
+        .spec-item strong {
+            color: var(--text-dark);
+        }
+
+        .bike-price {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin: 1rem 0;
+        }
+
+        .contact-btn {
+            width: 100%;
+            padding: 0.75rem;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .contact-btn:hover {
+            background: #e55a2b;
+            transform: translateY(-2px);
+        }
+
+        /* No Results Message */
+        .no-results {
+            display: none;
+            text-align: center;
+            padding: 4rem 2rem;
+            background: white;
+            border-radius: 12px;
+            margin-top: 2rem;
+        }
+
+        .no-results.show {
+            display: block;
+        }
+
+        .no-results i {
+            font-size: 4rem;
+            color: var(--text-light);
+            margin-bottom: 1rem;
+        }
+
+        .no-results h3 {
+            font-size: 1.5rem;
+            color: var(--text-dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .no-results p {
+            color: var(--text-light);
+            font-size: 1.1rem;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--secondary);
+            color: white;
+            padding: 3rem 0 1rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .footer-logo i {
+            font-size: 2rem;
+        }
+
+        .footer-column h4 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .footer-column ul {
+            list-style: none;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-column a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-column a:hover {
+            color: var(--primary);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            transition: all 0.3s;
+        }
+
+        .social-links a:hover {
+            background: var(--primary);
+            transform: translateY(-3px);
+        }
+
+        .contact-info li {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info i {
+            color: var(--primary);
+            margin-top: 4px;
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav {
+                display: none;
+            }
+
+            .mobile-toggle {
+                display: flex;
+            }
+
+            .header-actions .phone-btn span {
+                display: none;
+            }
+
+            .collection-hero h1 {
+                font-size: 2rem;
+            }
+
+            .filter-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .filter-brands {
+                width: 100%;
+            }
+
+            .filter-actions {
+                width: 100%;
+                justify-content: space-between;
+            }
+
+            .bikes-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-links {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .collection-hero {
+                padding: 4rem 0 2rem;
+            }
+
+            .collection-hero h1 {
+                font-size: 1.5rem;
+            }
+
+            .filter-brands {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .bike-specs {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-motorcycle"></i>
+                    <span>MotoPro</span>
+                </div>
+
+                <nav class="nav" id="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="index.html#marques">Marques</a></li>
+                        <li><a href="collection.html">Collection</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="a-propos.html">À propos</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <a href="tel:+33123456789" class="phone-btn">
+                        <i class="fas fa-phone"></i>
+                        <span>+33 1 23 45 67 89</span>
+                    </a>
+                    <button class="cta-btn">Réserver Essai</button>
+                </div>
+
+                <button class="mobile-toggle" id="mobileToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="collection-hero">
+        <div class="container">
+            <h1>Notre Collection</h1>
+            <p>Découvrez notre sélection de motos neuves et d'occasion</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-container">
+                <div class="filter-brands">
+                    <div class="brand-filter kawasaki">
+                        <input type="checkbox" id="filter-kawasaki" value="kawasaki" checked>
+                        <label for="filter-kawasaki">
+                            <i class="fas fa-check-circle"></i>
+                            Kawasaki
+                        </label>
+                    </div>
+                    <div class="brand-filter ktm">
+                        <input type="checkbox" id="filter-ktm" value="ktm" checked>
+                        <label for="filter-ktm">
+                            <i class="fas fa-check-circle"></i>
+                            KTM
+                        </label>
+                    </div>
+                    <div class="brand-filter yamaha">
+                        <input type="checkbox" id="filter-yamaha" value="yamaha" checked>
+                        <label for="filter-yamaha">
+                            <i class="fas fa-check-circle"></i>
+                            Yamaha
+                        </label>
+                    </div>
+                    <div class="brand-filter honda">
+                        <input type="checkbox" id="filter-honda" value="honda" checked>
+                        <label for="filter-honda">
+                            <i class="fas fa-check-circle"></i>
+                            Honda
+                        </label>
+                    </div>
+                </div>
+                <div class="filter-actions">
+                    <div class="bike-counter">
+                        <span class="count">15</span> motos
+                    </div>
+                    <button class="reset-btn" id="resetFilters">
+                        <i class="fas fa-redo"></i> Réinitialiser
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collection Section -->
+    <section class="collection-section">
+        <div class="container">
+            <div class="bikes-grid" id="bikesGrid">
+                <!-- Kawasaki Bikes -->
+                <div class="bike-card" data-brand="kawasaki">
+                    <div class="bike-image">
+                        <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?w=800&q=80" alt="Kawasaki Ninja 650">
+                        <div class="bike-badges">
+                            <span class="brand-badge kawasaki">Kawasaki</span>
+                            <span class="status-badge occasion">Occasion</span>
+                        </div>
+                    </div>
+                    <div class="bike-content">
+                        <h3>Ninja 650</h3>
+                        <div class="bike-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-calendar"></i>
+                                <span><strong>2022</strong></span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-road"></i>
+                                <span><strong>5,000 km</strong></span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-cog"></i>
+                                <span><strong>649 cm³</strong></span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span><strong>68 ch</strong></span>
+                            </div>
+                        </div>
+                        <div class="bike-price">12,900 €</div>
+                        <button class="contact-btn">
+                            <i class="fas fa-phone"></i>
+                            Nous contacter
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bike-card" data-brand="kawasaki">
+                    <div class="bike-image">
+                        <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=800&q=80" alt="Kawasaki Z900">
+                        <div class="bike-badges">
+                            <span class="brand-badge kawasaki">Kawasaki</span>
+                            <span class="status-badge neuf">Neuf</span>
+                        </div>
+                    </div>
+                    <div class="bike-content">
+                        <h3>Z900</h3>
+                        <div class="bike-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-calendar"></i>
+                                <span><strong>2024</strong></span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-road"></i>
+                                <span><strong>0 km</strong></span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-cog"></i>
+                                <span><strong>948 cm³</strong></span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span><strong>125 ch</strong></span>
+                            </div>
+                        </div>
+                        <div class="bike-price">10,499 €</div>
+                        <button class="contact-btn">
+                            <i class="fas fa-phone"></i>
+                            Nous contacter
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bike-card" data-brand="kawasaki">
+                    <div class="bike-image">
+                        <img src="https://images.unsplash.com/photo-1558981359-219d6364c9c8?w=800&q=80" alt="Kawasaki Ninja H2">
+                        <div class="bike-badges">
+                            <span class="brand-badge kawasaki">Kawasaki</span>
+                            <span class="status-badge occasion">Occasion</span>
+                        </div>
+                    </div>
+                    <div class="bike-content">
+                        <h3>Ninja H2</h3>
+                        <div class="bike-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-calendar"></i>
+                                <span><strong>2021</strong></span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-road"></i>
+                                <span><strong>8,500 km</strong></span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-cog"></i>
+                                <span><strong>998 cm³</strong></span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span><strong>231 ch</strong></span>
+                            </div>
+                        </div>
+                        <div class="bike-price">24,900 €</div>
+                        <button class="contact-btn">
+                            <i class="fas fa-phone"></i>
+                            Nous contacter
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bike-card" data-brand="kawasaki">
+                    <div class="bike-image">
+                        <img src="https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?w=800&q=80" alt="Kawasaki Versys 650">
+                        <div class="bike-badges">
+                            <span class="brand-badge kawasaki">Kawasaki</span>
+                            <span class="status-badge occasion">Occasion</span>
+                        </div>
+                    </div>
+                    <div class="bike-content">
+                        <h3>Versys 650</h3>
+                        <div class="bike-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-calendar"></i>
+                                <span><strong>2023</strong></span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-road"></i>
+                                <span><strong>12,000 km</strong></span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-cog"></i>
+                                <span><strong>649 cm³</strong></span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span><strong>69 ch</strong></span>
+                            </div>
+                        </div>
+                        <div class="bike-price">8,900 €</div>
+                        <button class="contact-btn">
+                            <i class="fas fa-phone"></i>
+                            Nous contacter
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Yamaha Bikes -->
+                <div class="bike-card" data-brand="yamaha">
+                    <div class="bike-image">
+                        <img src="https://images.unsplash.com/photo-1609630875171-b1321377ee65?w=800&q=80" alt="Yamaha MT-07">
+                        <div class="bike-badges">
+                            <span class="brand-badge yamaha">Yamaha</span>
+                            <span class="status-badge neuf">Neuf</span>
+                        </div>
+                    </div>
+                    <div class="bike-content">
+                        <h3>MT-07</h3>
+                        <div class="bike-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-calendar"></i>
+                                <span><strong>2024</strong></span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-road"></i>
+                                <span><strong>0 km</strong></span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-cog"></i>
+                                <span><strong>689 cm³</strong></span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span><strong>73 ch</strong></span>
+                            </div>
+                        </div>
+                        <div class="bike-price">7,999 €</div>
+                        <button class="contact-btn">
+                            <i class="fas fa-phone"></i>
+                            Nous contacter
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bike-card" data-brand="yamaha">
+                    <div class="bike-image">
+                        <img src="https://images.unsplash.com/photo-1558981852-426c6c22a060?w=800&q=80" alt="Yamaha MT-09">
+                        <div class="bike-badges">
+                            <span class="brand-badge yamaha">Yamaha</span>
+                            <span class="status-badge neuf">Neuf</span>
+                        </div>
+                    </div>
+                    <div class="bike-content">
+                        <h3>MT-09</h3>
+                        <div class="bike-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-calendar"></i>
+                                <span><strong>2024</strong></span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-road"></i>
+                                <span><strong>0 km</strong></span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-cog"></i>
+                                <span><strong>890 cm³</strong></span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span><strong>119 ch</strong></span>
+                            </div>
+                        </div>
+                        <div class="bike-price">10,199 €</div>
+                        <button class="contact-btn">
+                            <i class="fas fa-phone"></i>
+                            Nous contacter
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bike-card" data-brand="yamaha">
+                    <div class="bike-image">
+                        <img src="https://images.unsplash.com/photo-1558980664-1db506751c6c?w=800&q=80" alt="Yamaha R6">
+                        <div class="bike-badges">
+                            <span class="brand-badge yamaha">Yamaha</span>
+                            <span class="status-badge occasion">Occasion</span>
+                        </div>
+                    </div>
+                    <div class="bike-content">
+                        <h3>R6</h3>
+                        <div class="bike-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-calendar"></i>
+                                <span><strong>2020</strong></span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-road"></i>
+                                <span><strong>15,000 km</strong></span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-cog"></i>
+                                <span><strong>599 cm³</strong></span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span><strong>118 ch</strong></span>
+                            </div>
+                        </div>
+                        <div class="bike-price">9,500 €</div>
+                        <button class="contact-btn">
+                            <i class="fas fa-phone"></i>
+                            Nous contacter
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bike-card" data-brand="yamaha">
+                    <div class="bike-image">
+                        <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=800&q=80" alt="Yamaha Ténéré 700">
+                        <div class="bike-badges">
+                            <span class="brand-badge yamaha">Yamaha</span>
+                            <span class="status-badge occasion">Occasion</span>
+                        </div>
+                    </div>
+                    <div class="bike-content">
+                        <h3>Ténéré 700</h3>
+                        <div class="bike-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-calendar"></i>
+                                <span><strong>2022</strong></span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-road"></i>
+                                <span><strong>8,000 km</strong></span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-cog"></i>
+                                <span><strong>689 cm³</strong></span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span><strong>73 ch</strong></span>
+                            </div>
+                        </div>
+                        <div class="bike-price">10,200 €</div>
+                        <button class="contact-btn">
+                            <i class="fas fa-phone"></i>
+                            Nous contacter
+                        </button>
+                    </div>
+                </div>
+
+                <!-- KTM Bikes -->
+                <div class="bike-card" data-brand="ktm">
+                    <div class="bike-image">
+                        <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=800&q=80" alt="KTM 390 Duke">
+                        <div class="bike-badges">
+                            <span class="brand-badge ktm">KTM</span>
+                            <span class="status-badge occasion">Occasion</span>
+                        </div>
+                    </div>
+                    <div class="bike-content">
+                        <h3>390 Duke</h3>
+                        <div class="bike-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-calendar"></i>
+                                <span><strong>2023</strong></span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-road"></i>
+                                <span><strong>3,200 km</strong></span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-cog"></i>
+                                <span><strong>373 cm³</strong></span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span><strong>44 ch</strong></span>
+                            </div>
+                        </div>
+                        <div class="bike-price">5,400 €</div>
+                        <button class="contact-btn">
+                            <i class="fas fa-phone"></i>
+                            Nous contacter
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bike-card" data-brand="ktm">
+                    <div class="bike-image">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80" alt="KTM 890 Duke R">
+                        <div class="bike-badges">
+                            <span class="brand-badge ktm">KTM</span>
+                            <span class="status-badge neuf">Neuf</span>
+                        </div>
+                    </div>
+                    <div class="bike-content">
+                        <h3>890 Duke R</h3>
+                        <div class="bike-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-calendar"></i>
+                                <span><strong>2024</strong></span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-road"></i>
+                                <span><strong>0 km</strong></span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-cog"></i>
+                                <span><strong>889 cm³</strong></span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span><strong>121 ch</strong></span>
+                            </div>
+                        </div>
+                        <div class="bike-price">12,299 €</div>
+                        <button class="contact-btn">
+                            <i class="fas fa-phone"></i>
+                            Nous contacter
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bike-card" data-brand="ktm">
+                    <div class="bike-image">
+                        <img src="https://images.unsplash.com/photo-1609630875171-b1321377ee65?w=800&q=80" alt="KTM 390 Adventure">
+                        <div class="bike-badges">
+                            <span class="brand-badge ktm">KTM</span>
+                            <span class="status-badge neuf">Neuf</span>
+                        </div>
+                    </div>
+                    <div class="bike-content">
+                        <h3>390 Adventure</h3>
+                        <div class="bike-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-calendar"></i>
+                                <span><strong>2024</strong></span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-road"></i>
+                                <span><strong>0 km</strong></span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-cog"></i>
+                                <span><strong>373 cm³</strong></span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span><strong>44 ch</strong></span>
+                            </div>
+                        </div>
+                        <div class="bike-price">6,799 €</div>
+                        <button class="contact-btn">
+                            <i class="fas fa-phone"></i>
+                            Nous contacter
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Honda Bikes -->
+                <div class="bike-card" data-brand="honda">
+                    <div class="bike-image">
+                        <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?w=800&q=80" alt="Honda CB650R">
+                        <div class="bike-badges">
+                            <span class="brand-badge honda">Honda</span>
+                            <span class="status-badge neuf">Neuf</span>
+                        </div>
+                    </div>
+                    <div class="bike-content">
+                        <h3>CB650R</h3>
+                        <div class="bike-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-calendar"></i>
+                                <span><strong>2024</strong></span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-road"></i>
+                                <span><strong>0 km</strong></span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-cog"></i>
+                                <span><strong>649 cm³</strong></span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span><strong>95 ch</strong></span>
+                            </div>
+                        </div>
+                        <div class="bike-price">9,299 €</div>
+                        <button class="contact-btn">
+                            <i class="fas fa-phone"></i>
+                            Nous contacter
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bike-card" data-brand="honda">
+                    <div class="bike-image">
+                        <img src="https://images.unsplash.com/photo-1558981359-219d6364c9c8?w=800&q=80" alt="Honda CBR650R">
+                        <div class="bike-badges">
+                            <span class="brand-badge honda">Honda</span>
+                            <span class="status-badge occasion">Occasion</span>
+                        </div>
+                    </div>
+                    <div class="bike-content">
+                        <h3>CBR650R</h3>
+                        <div class="bike-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-calendar"></i>
+                                <span><strong>2021</strong></span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-road"></i>
+                                <span><strong>10,500 km</strong></span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-cog"></i>
+                                <span><strong>649 cm³</strong></span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span><strong>95 ch</strong></span>
+                            </div>
+                        </div>
+                        <div class="bike-price">8,500 €</div>
+                        <button class="contact-btn">
+                            <i class="fas fa-phone"></i>
+                            Nous contacter
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bike-card" data-brand="honda">
+                    <div class="bike-image">
+                        <img src="https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?w=800&q=80" alt="Honda Africa Twin">
+                        <div class="bike-badges">
+                            <span class="brand-badge honda">Honda</span>
+                            <span class="status-badge occasion">Occasion</span>
+                        </div>
+                    </div>
+                    <div class="bike-content">
+                        <h3>Africa Twin</h3>
+                        <div class="bike-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-calendar"></i>
+                                <span><strong>2022</strong></span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-road"></i>
+                                <span><strong>18,000 km</strong></span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-cog"></i>
+                                <span><strong>1084 cm³</strong></span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span><strong>102 ch</strong></span>
+                            </div>
+                        </div>
+                        <div class="bike-price">13,900 €</div>
+                        <button class="contact-btn">
+                            <i class="fas fa-phone"></i>
+                            Nous contacter
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bike-card" data-brand="honda">
+                    <div class="bike-image">
+                        <img src="https://images.unsplash.com/photo-1558980664-1db506751c6c?w=800&q=80" alt="Honda CB500F">
+                        <div class="bike-badges">
+                            <span class="brand-badge honda">Honda</span>
+                            <span class="status-badge neuf">Neuf</span>
+                        </div>
+                    </div>
+                    <div class="bike-content">
+                        <h3>CB500F</h3>
+                        <div class="bike-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-calendar"></i>
+                                <span><strong>2024</strong></span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-road"></i>
+                                <span><strong>0 km</strong></span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-cog"></i>
+                                <span><strong>471 cm³</strong></span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span><strong>47 ch</strong></span>
+                            </div>
+                        </div>
+                        <div class="bike-price">6,499 €</div>
+                        <button class="contact-btn">
+                            <i class="fas fa-phone"></i>
+                            Nous contacter
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- No Results Message -->
+            <div class="no-results" id="noResults">
+                <i class="fas fa-search"></i>
+                <h3>Aucune moto trouvée</h3>
+                <p>Essayez de modifier vos filtres pour voir plus de résultats</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <i class="fas fa-motorcycle"></i>
+                        <span>MotoPro</span>
+                    </div>
+                    <p>Votre spécialiste et concessionnaire officiel de grandes marques de motos.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Liens rapides</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="collection.html">Collection</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#marques">Marques</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Nos marques</h4>
+                    <ul>
+                        <li><a href="kawasaki.html">Kawasaki</a></li>
+                        <li><a href="ktm.html">KTM</a></li>
+                        <li><a href="yamaha.html">Yamaha</a></li>
+                        <li><a href="honda.html">Honda</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Rue de la Moto<br>75001 Paris</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+33123456789">+33 1 23 45 67 89</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:contact@motopro.fr">contact@motopro.fr</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Lun-Ven: 8h-18h<br>Sam: 9h-16h</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 MotoPro. Tous droits réservés.</p>
+                <div class="footer-links">
+                    <a href="mentions-legales.html">Mentions légales</a>
+                    <a href="confidentialite.html">Politique de confidentialité</a>
+                    <a href="cgv.html">CGV</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Filter functionality
+        const filterCheckboxes = document.querySelectorAll('.brand-filter input[type="checkbox"]');
+        const bikeCards = document.querySelectorAll('.bike-card');
+        const bikeCounter = document.querySelector('.bike-counter .count');
+        const noResults = document.getElementById('noResults');
+        const resetBtn = document.getElementById('resetFilters');
+
+        function updateBikeDisplay() {
+            const checkedBrands = Array.from(filterCheckboxes)
+                .filter(checkbox => checkbox.checked)
+                .map(checkbox => checkbox.value);
+
+            let visibleCount = 0;
+
+            bikeCards.forEach(card => {
+                const bikeBrand = card.getAttribute('data-brand');
+
+                if (checkedBrands.includes(bikeBrand)) {
+                    card.classList.remove('hidden');
+                    visibleCount++;
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+
+            // Update counter
+            bikeCounter.textContent = visibleCount;
+
+            // Show/hide no results message
+            if (visibleCount === 0) {
+                noResults.classList.add('show');
+            } else {
+                noResults.classList.remove('show');
+            }
+        }
+
+        // Add event listeners to checkboxes
+        filterCheckboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', updateBikeDisplay);
+        });
+
+        // Reset filters
+        resetBtn.addEventListener('click', () => {
+            filterCheckboxes.forEach(checkbox => {
+                checkbox.checked = true;
+            });
+            updateBikeDisplay();
+        });
+
+        // Mobile menu toggle
+        const mobileToggle = document.getElementById('mobileToggle');
+        const nav = document.getElementById('nav');
+
+        if (mobileToggle) {
+            mobileToggle.addEventListener('click', () => {
+                nav.classList.toggle('active');
+                mobileToggle.classList.toggle('active');
+            });
+        }
+
+        // Contact buttons
+        const contactButtons = document.querySelectorAll('.contact-btn');
+        contactButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                window.location.href = 'tel:+33123456789';
+            });
+        });
+
+        // CTA button
+        const ctaBtn = document.querySelector('.cta-btn');
+        if (ctaBtn) {
+            ctaBtn.addEventListener('click', () => {
+                window.location.href = 'index.html#contact';
+            });
+        }
+
+        // Initial display
+        updateBikeDisplay();
+    </script>
+</body>
+</html>
